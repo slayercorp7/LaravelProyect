@@ -1,0 +1,23 @@
+
+.bg-primary .navbar-brand{
+    color:white;
+    font-size: 1.5rem;
+    &:hover{
+        color:white;
+
+    }
+}
+
+trix-editor{
+
+    min-height: 400px;
+    height: 300px;
+    overflow-y: auto;
+    
+}
+
+.icono{
+
+   width: 33px;
+    
+} 
