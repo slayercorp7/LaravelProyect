@@ -42,8 +42,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    /* Relacion 1:n Usuarios-Recetas*/
-    /*  Un usuario puede tener multiples recetas */
+
     public function userCursos(){
         
         return $this->hasMany(Curso::class);
@@ -65,8 +64,6 @@ class User extends Authenticatable
     public function userPerfil(){
         return $this->hasOne(Perfil::class);
     }
-
-    //Recetas que el usuario le a dado me gusta
     public function iLike(){
         return $this->belongsToMany(Curso::class, 'like_cursos');
     }
